@@ -32,7 +32,7 @@ class Solution:
             x = nums[i]
             # print(dict.get(target-x))
             index_of_j = dict.get(target-x)
-            if index_of_j:
+            if index_of_j and i!=index_of_j:
                 nums1[0], nums1[1] = i, index_of_j
                 break
         print(count)
